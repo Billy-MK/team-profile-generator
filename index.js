@@ -9,6 +9,7 @@ const Manager = require('./lib/manager');
 const Intern = require('./lib/intern');
 const Engineer = require('./lib/engineer');
 const Application = require('./lib/application');
+var employees = [];
 
 // Inquirer questions
 
@@ -52,6 +53,6 @@ const internQuestions = [
     }
 ]
 
-const application = new Application();
+const application = new Application(employees);
 
 application.manager();
