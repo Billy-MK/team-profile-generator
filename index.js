@@ -1,13 +1,14 @@
 // Inquirer and Jest packages
 
-const inquirer = require('inquirer');
-const jest = require('jest');
+// const inquirer = require('inquirer');
+// const jest = require('jest');
 
 // Classes
 
 const Manager = require('./lib/manager');
 const Intern = require('./lib/intern');
 const Engineer = require('./lib/engineer');
+const Application = require('./lib/application');
 
 // Inquirer questions
 
@@ -43,14 +44,6 @@ const newEmployeeQuestion = [
     }
 ]
 
-const engineerQuestions = [
-    {
-        type: "input",
-        name: "github",
-        message: "Enter the engineer's GitHub username."
-    }
-]
-
 const internQuestions = [
     {
         type: "input",
@@ -58,3 +51,7 @@ const internQuestions = [
         message: "Enter the intern's school."
     }
 ]
+
+const application = new Application();
+
+application.manager();
