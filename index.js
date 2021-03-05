@@ -10,7 +10,9 @@ const Intern = require('./lib/intern');
 const Engineer = require('./lib/engineer');
 const Application = require('./lib/application');
 
-var employees = [];
-const application = new Application(employees);
+var managers = [];
+var engineers = [];
+var interns = [];
+const application = new Application(managers, engineers, interns);
 
 application.manager();
