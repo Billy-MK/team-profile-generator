@@ -1,7 +1,7 @@
 // Inquirer and Jest packages
 
-// const inquirer = require('inquirer');
-// const jest = require('jest');
+const inquirer = require('inquirer');
+const jest = require('jest');
 
 // Classes
 
